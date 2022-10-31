@@ -1,8 +1,8 @@
 *** Settings ***
 Documentation    Validate application homepage and login page
 Library  SeleniumLibrary
-Resource   resources/MyKeywords.robot
-Resource  resources/Variables.robot
+Resource   MyKeywords.robot
+Resource  Variables.robot
 Suite Teardown  Close All Browsers
 
 *** Test Cases ***
@@ -31,13 +31,14 @@ Valid error messages for incorrect login
     [Template]  Verify error messages for different invalid login scenarios
     #username               password   error messages
     lanre_april@gmail.com   test      Invalid password.
-    lanre@gmail.com         testing   Invalid email address.
+    lanre@gmail.com         testing   Authentication failed.
     ${EMPTY}                Testing   An email address required.
 
 Verify that users can retrieve forgotten password
     [Tags]  lanre
     [Setup]  Get to login page
     Retrieve User Password  ${FORGOT_PASSWORD_LINK}  ${FORGOT_PASSWORD_EMAIL}  lanre_april@gmail.com  ${RETRIEVE_PASSWORD_BTN}
+
 
 
 *** Keywords ***
