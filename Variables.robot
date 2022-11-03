@@ -36,3 +36,9 @@ ${MY_ADDRESSES}  xpath://span[text() = 'My addresses']
 ${NEW_ADDRESS}  xpath://span[text() = 'Add a new address']
 ${SAVE_BTN}  id:submitAddress
 ${DELET_ADD_BTN}  xpath://*[@id="center_column"]/div[1]/div/div[2]/ul/li[9]/a[2]/span
+${CART_BTN}      xpath://*[@id="header"]/div[3]/div/div/div[3]/div/a/b
+${WOMEN_CATEGORY}   xpath://*[@id="block_top_menu"]/ul/li[1]/a
+${SELECT_ITEM}      xpath://*[@id="center_column"]/ul/li[2]/div/div[2]/h5/a
+${ADD_ITEM_TO_CART}      xpath://*[@id="add_to_cart"]/button/span
+${SIGN_OUT}         xpath://*[@id="header"]/div[2]/div/div/nav/div[2]/a
+${RETURN_TO_HOMEPAGE}  xpath://*[@id="header_logo"]/a/img

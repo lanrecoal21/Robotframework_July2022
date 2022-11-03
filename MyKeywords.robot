@@ -10,7 +10,7 @@ Check homepage logo and add to cart
    Maximize Browser Window
    Wait Until Element Is Visible    ${APP_LOGO}   10s
    Wait Until Element Is Visible    ${SHOPPING_CART}  10s
-   Capture Page Screenshot
+  # Capture Page Screenshot
 
 Login user
      [Arguments]  ${username}  ${password}
@@ -21,6 +21,15 @@ Login user
      Wait And Input Text    ${LOGIN_PASSWD_FIELD}    ${password}
      Wait And Click Element  ${LOGIN_BTN}
      Page Should Contain  ${LOGGEDIN_USER}
+
+
+Adding item to cart sign out and back to homepage
+    Wait And Click Element    ${CART_BTN}
+    Wait And Click Element    ${WOMEN_CATEGORY}
+    Wait And Click Element    ${SELECT_ITEM}
+    Wait And Click Element    ${ADD_ITEM_TO_CART}
+    Wait And Click Element    ${SIGN_OUT}
+    Wait And Click Element    ${RETURN_TO_HOMEPAGE}
 
 Enter user credentials to add address
      [Arguments]  ${username}  ${password}
