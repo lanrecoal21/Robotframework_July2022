@@ -124,3 +124,13 @@ Delete Address and Close Browser
     Handle Alert  Accept
     Page should Not Contain   Testing House
     Close Browser
+
+Change password and save
+    Wait And Click Element    ${EDIT_PERSONAL_INFO_BTN}
+    Wait And Input Text    ${CURRENT_PASSWORD}    testing
+    Wait And Input Text   ${LOGIN_PASSWD_FIELD}  testingupdate
+    Wait And Input Text  ${CONFIRM_PASSWORD}  testingupdate
+    Wait And Click Element    ${SAVE_NEW_PASSWORD}
+    Wait Until Page Contains     Your personal information has been successfully updated.
+    Close Browser
+

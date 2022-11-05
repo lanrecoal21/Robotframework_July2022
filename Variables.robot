@@ -36,3 +36,8 @@ ${MY_ADDRESSES}  xpath://span[text() = 'My addresses']
 ${NEW_ADDRESS}  xpath://span[text() = 'Add a new address']
 ${SAVE_BTN}  id:submitAddress
 ${DELET_ADD_BTN}  xpath://*[@id="center_column"]/div[1]/div/div[2]/ul/li[9]/a[2]/span
+${EDIT_PERSONAL_INFO_BTN}  xpath://*[@id="center_column"]/div/div[1]/ul/li[4]/a/span
+${CURRENT_PASSWORD}  id:old_passwd
+${CONFIRM_PASSWORD}  id:confirmation
+${SAVE_NEW_PASSWORD}  xpath://*[@id="center_column"]/div/form/fieldset/div[11]/button/span
+
